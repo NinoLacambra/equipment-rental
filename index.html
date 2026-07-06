@@ -45,12 +45,18 @@
       equipmentList = await res.json();
       const select = document.getElementById("equipment");
       select.innerHTML = "";
+      
       equipmentList.forEach(item => {
         const opt = document.createElement("option");
         opt.value = item.id;
-        opt.textContent = `${item.name} (PHP ${item.daily_rate}/day)`;
+        const isMaintenance = item.status === "maintenance";
+        opt.textContent = isMaintenance
+          ? `${item.name} (PHP ${item.daily_rate}/day) — Under maintenance`
+          : `${item.name} (PHP ${item.daily_rate}/day)`;
+        opt.disabled = isMaintenance;
         select.appendChild(opt);
       });
+
     }
 
     function selectedEquipment() {
