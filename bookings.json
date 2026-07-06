@@ -28,5 +28,25 @@
     "to_date": "2026-01-25",
     "total": 7500.0,
     "status": "confirmed"
+  },
+  {
+    "id": 4,
+    "equipment_id": 2,
+    "equipment_name": "Cordless Drill",
+    "customer": "Test User",
+    "from_date": "2026-02-05",
+    "to_date": "2026-02-05",
+    "total": 0.0,
+    "status": "confirmed"
+  },
+  {
+    "id": 5,
+    "equipment_id": 2,
+    "equipment_name": "Cordless Drill",
+    "customer": "Test User",
+    "from_date": "2026-02-06",
+    "to_date": "2026-02-06",
+    "total": 480.0,
+    "status": "confirmed"
   }
 ]
